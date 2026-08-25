@@ -1,0 +1,24 @@
+# ── Secrets (spec §5.7 — never commit) ───────────────────────────────────────
+.env
+.env.local
+.env.*.local
+supabase/.env
+
+# ── Node / Next.js ────────────────────────────────────────────────────────────
+node_modules/
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# ── Supabase ──────────────────────────────────────────────────────────────────
+supabase/.temp/
+supabase/.branches/
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+.vercel
