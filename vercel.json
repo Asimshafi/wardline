@@ -1,0 +1,18 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": ".next",
+  "rewrites": [
+    { "source": "/_next/.*", "destination": "/_next/$0" }
+  ],
+  "headers": [
+    {
+      "source": "/_next/static/(.*)",
+      "headers": { "Cache-Control": "public, max-age=31536000, immutable" }
+    }
+  ],
+  "functions": {
+    "app/**/*.ts": { "runtime": "nodejs22.x" }
+  }
+}
